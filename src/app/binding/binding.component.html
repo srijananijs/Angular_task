@@ -1,0 +1,26 @@
+<p>binding works!</p>
+<hr>
+<h3>One way Data Binding </h3>
+<p>My name is {{text}}</p>
+<p [class]="className">Class name in DOM is set</p><!--property binding-->
+<h4>Attribute Bindig</h4>
+<table>
+    <tr>
+        <td [attr.colspan]="colspan">Binding types</td>
+    <tr>
+        <td>
+            One way
+        </td>
+        <td>
+            Two way
+        </td>
+    </tr>
+</table>
+--------
+<h4>Event Binding</h4>
+<button (click)="clickMe()">Click</button><!--event binding-->
+<hr>
+<h3>Two way Data Binding</h3>
+<input type="text" [(ngModel)]="name">
+{{name}}
+<hr>

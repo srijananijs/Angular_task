@@ -1,0 +1,13 @@
+<h2>Sign up form</h2>
+<form #userDetails="ngForm" (ngSubmit)="onSubmit(userDetails.value)">
+    <label>Enter your name: </label>
+    <input type="text" name="name" ngModel><br><br>
+    <label>Enter your email: </label>
+    <input type="email" name="email" ngModel><br><br>
+    <label>Address: </label>
+    <input type="text" name="address" ngModel><br><br>
+    <label>Contact number: </label>
+    <input type="tel" name="number" ngModel><br><br>
+    <button type="submit">Submit</button>
+</form>
+<!--<app-user-details></app-user-details>-->

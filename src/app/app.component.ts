@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'New_project';
+  value : string = 'Sri';
+
+  showLifecycle : boolean = false;
+  
+  onShoworHide():void{
+     this.showLifecycle = !this.showLifecycle;
+  }
 }

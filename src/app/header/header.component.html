@@ -1,0 +1,7 @@
+<h2>Parent</h2>
+<p>header works!</p>
+<input type="text" [(ngModel)]="name"> 
+<br>
+{{childData}}
+<hr>
+<app-footer [parentName]="name" (childNameData)="receiveData($event)"></app-footer>

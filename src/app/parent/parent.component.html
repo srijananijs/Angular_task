@@ -1,0 +1,8 @@
+<h3>Parent Component</h3>
+<label>Parent name:</label>
+<input type="text" [(ngModel)]="name">
+<h5>Data from child component: {{childname}}</h5>
+
+
+<hr>
+<app-child [parentName]="name" (childStringData)="receiveData($event)"></app-child>
